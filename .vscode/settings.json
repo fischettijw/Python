@@ -1,0 +1,15 @@
+{
+  "python.pythonPath": "C:\\Users\\fisch\\miniconda3\\python.exe",
+  // "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.languageServer": "Pylance",
+  "python.linting.enabled": true,
+
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": null
+  },
+  "python.formatting.blackArgs": ["--line-length", "120"],
+  "python.formatting.provider": "autopep8",
+  "python.linting.flake8Enabled": false
+}
