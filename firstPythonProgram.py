@@ -1,11 +1,43 @@
 # Code Runner: RUN: Ctrl-Alt-n          STOP: Ctrl-Alt-m
 # Math     +ADD     -SUB    *MULT   /DIV    **EXPONENT
 
-# x = "john"
+# Some of the mutable data types in Python are
+# list, dictionary, set and user-defined classes.
+
+# On the other hand, some of the immutable data types are
+# int, float, decimal, bool, string, tuple, and range.
+
+# https://towardsdatascience.com/https-towardsdatascience-com-python-basics-mutable-vs-immutable-objects-829a0cb1530a
+# https://www.youtube.com/watch?v=5qQQ3yzbKp8
+
+# x = "john"        # strings are immutable
 # y = "john"
 
-# print(f"x = _{x}_ at address {id(x)}")
-# print(f"y = _{y}_ at address {id(y)}")
+# print(f"x = '{x}' at address {id(x)}")
+# print(f"y = '{y}' at address {id(y)}")
+# print()
+
+# # print(x[0])
+# # x[0] = "J"
+# # print(x)
+
+
+# y = "mary"
+# print(f"x = '{x}' at address {id(x)}")
+# print(f"y = '{y}' at address {id(y)}")
+
+
+# values = [4, 5, 6]         # list are mutable
+# values2 = values
+# print(id(values))
+# print(id(values2))
+
+# values.append(7)
+# print(values is values2)
+# print(id(values))
+# print(id(values2))
+# print(values)
+# print(values2)
 
 # exit()
 
