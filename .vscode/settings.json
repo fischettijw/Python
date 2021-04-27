@@ -1,5 +1,5 @@
 {
-  "python.pythonPath": "C:\\Users\\fisch\\miniconda3\\python.exe",
+  "python.pythonPath": "C:\\Users\\fisch\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
   // "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "python.languageServer": "Pylance",
