@@ -18,27 +18,29 @@
 # print()
 
 # print(x[0])
+# print()
 # # x[0] = "J"           # error
-# # x = 'joe'
+# x = 'joe'
 # print(x)
 
 
-# y = "mary"
+# # y = "mary"
 # print(f"x = '{x}' at address {id(x)}")
 # print(f"y = '{y}' at address {id(y)}")
+# print()
 
 
-# values = [4, 5, 6]         # list are mutable
-# values2 = values
-# print(id(values), values)
-# print(id(values2), values2)
+values = [4, 5, 6]         # list are mutable
+values2 = values
+print(id(values), values)
+print(id(values2), values2)
 
-# values.append(7)
-# print(values is values2)
-# print(id(values))
-# print(id(values2))
-# print(values)
-# print(values2)
+values.append(7)
+print(values is values2)
+print(id(values))
+print(id(values2))
+print(values)
+print(values2)
 
 # exit()
 
