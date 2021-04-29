@@ -5,6 +5,7 @@
 
 from inspect import currentframe as cf
 
+# Immutable objects:int, float, complex, string, tuple
 print('      --- STRINGS are IMMUTABLE ---\n')
 string1 = "john"
 string2 = "john"
@@ -20,6 +21,7 @@ print(f"{cf().f_lineno} | string1 is string2 = {string1 is string2}")
 
 # ======================================================================
 
+# Mutable objects: list, dict, set
 print('\n\n      --- LISTS are MUTABLE ---\n')
 values = [4, 5, 6]
 values2 = values
