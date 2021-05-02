@@ -23,20 +23,25 @@ print()
 
 ply1 = copy.deepcopy(player1)
 ply2 = copy.deepcopy(player2)
-
+wins1 = 0
+wins2 = 0
 
 for i in range(total_cards_in_deck//2):
     print(
-        f'{i} \t Player 1: {player1[i]} \t Player 2: {player2[i]} \t', end='')
+        f'{i} \t Player 1: {player1[i]} \t Player 2: {player2[i]} \t \t', end='')
     if player1[i] > player2[i]:
         ply1.append(player2[i])
         ply2.remove(player2[i])
-        print(f'1 WINS')
-
+        wins1 += 1
+        print(f'Player 1 WINS')
     else:
         ply2.append(player1[i])
         ply1.remove(player1[i])
-        print(f'2 WINS')
+        wins2 += 1
+        print(f'Player 2 WINS')
+
+print()
+print(f'Player 1 WINS: {wins1} \t Player 2 Wins: {wins2}')
 
 print()
 print(f'ply1: {ply1}')
