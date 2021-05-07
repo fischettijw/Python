@@ -1,6 +1,8 @@
-# from nt import system
+# python - i HelloWorld.py
+import os
+
+os.system('cls')
 print("Hello World")
-# system('cls')
 x = 30
 print(x)
 if x > 45:
