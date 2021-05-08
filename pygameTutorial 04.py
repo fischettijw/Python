@@ -21,16 +21,12 @@ def redrawGameWindow():
     else:
         win.blit(char, (x, y))
 
-    # pygame.draw.rect(win, (255, 0, 0), (x, y, width, height))
-    # pygame.draw.rect(win, (255, 255, 255), (x+10, y+10, width-20, height-20))
-    # pygame.draw.rect(win, (0, 255, 0), (x+20, y+20, width-40, height-40))
-
     pygame.display.update()
 
 
 pygame.init()
-scrn_width = 500
-scrn_height = 480
+scrn_width = 1280
+scrn_height = 720
 win = pygame.display.set_mode((scrn_width, scrn_height))
 pygame.display.set_caption("First Game with PyGame   by Joseph Fischetti")
 
@@ -52,13 +48,13 @@ walkLeft = [pygame.image.load(imgPath + '\L1.png'), pygame.image.load(imgPath + 
             pygame.image.load(
                 imgPath + '\L7.png'), pygame.image.load(imgPath + '\L8.png'),
             pygame.image.load(imgPath + '\L9.png')]
-bg = pygame.image.load(imgPath + '\\bj.jpg')
+bg = pygame.image.load(imgPath + '\\game_background_1280X720.jpeg')
 char = pygame.image.load(imgPath + '\\standing.png')
 
 clock = pygame.time.Clock()
 width = 64
 height = 64
-x = 50
+x = scrn_width/4
 y = scrn_height - height
 vel = 5
 

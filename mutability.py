@@ -2,8 +2,9 @@
 # https://www.youtube.com/watch?v=5qQQ3yzbKp8
 # Mutable objects: list, dict, set
 # Immutable objects:int, float, complex, string, tuple
-
 from inspect import currentframe as cf
+import os
+os.system('cls')
 
 # Immutable objects:int, float, complex, string, tuple
 print('      --- STRINGS are IMMUTABLE ---\n')
