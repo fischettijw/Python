@@ -1,8 +1,10 @@
-"""Draw random circles.
+"""Draw random ellipses.
 """
 from graphics import *
 import random
 import time
+import os
+os.system('cls')
 
 
 def main():

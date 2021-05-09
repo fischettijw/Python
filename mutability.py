@@ -15,23 +15,23 @@ print(f"{cf().f_lineno} | string1 = '{string1}' at address {id(string1)}")
 print(f"{cf().f_lineno} | string2 = '{string2}' at address {id(string2)}")
 print(f"{cf().f_lineno} | string1 is string2 = {string1 is string2}\n")
 
-string1 = 'mary'
-print(f"{cf().f_lineno} | string1 = '{string1}' at address {id(string1)}")
-print(f"{cf().f_lineno} | string2 = '{string2}' at address {id(string2)}")
-print(f"{cf().f_lineno} | string1 is string2 = {string1 is string2}")
+# string1 = 'mary'
+# print(f"{cf().f_lineno} | string1 = '{string1}' at address {id(string1)}")
+# print(f"{cf().f_lineno} | string2 = '{string2}' at address {id(string2)}")
+# print(f"{cf().f_lineno} | string1 is string2 = {string1 is string2}")
 
-# ======================================================================
+# # ======================================================================
 
-# Mutable objects: list, dict, set
-print('\n\n      --- LISTS are MUTABLE ---\n')
-values = [4, 5, 6]
-values2 = values
+# # Mutable objects: list, dict, set
+# print('\n\n      --- LISTS are MUTABLE ---\n')
+# values = [4, 5, 6]
+# values2 = values
 
-print(f"{cf().f_lineno} | {id(values)} {values}")
-print(f"{cf().f_lineno} | {id(values2)} {values2}")
-print(f"{cf().f_lineno} | values is values2 = {values is values2}\n")
+# print(f"{cf().f_lineno} | {id(values)} {values}")
+# print(f"{cf().f_lineno} | {id(values2)} {values2}")
+# print(f"{cf().f_lineno} | values is values2 = {values is values2}\n")
 
-values.append(7)
-print(f"{cf().f_lineno} | {id(values)} {values}")
-print(f"{cf().f_lineno} | {id(values2)} {values2}")
-print(f"{cf().f_lineno} | values is values2 = {values is values2}")
+# values.append(7)
+# print(f"{cf().f_lineno} | {id(values)} {values}")
+# print(f"{cf().f_lineno} | {id(values2)} {values2}")
+# print(f"{cf().f_lineno} | values is values2 = {values is values2}")
