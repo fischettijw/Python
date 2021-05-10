@@ -6,6 +6,7 @@ os.system('cls')
 
 
 class player(object):
+    initJumpCount = 10
 
     def __init__(self, x, y, width, height):
         self.x = x
@@ -14,8 +15,7 @@ class player(object):
         self.height = height
         self.vel = 5
         self.isJump = False
-        self.initJumpCount = 10
-        self.jumpCount = self.initJumpCount
+        self.jumpCount = player.initJumpCount
         self.left = False
         self.right = False
         self.walkCount = 0
@@ -47,7 +47,8 @@ win = pygame.display.set_mode((scrn_width, scrn_height))
 pygame.display.set_caption("First Game with PyGame   by Joseph Fischetti")
 
 # This goes outside the while loop, near the top of the program
-imgPath = 'D:\Documents\VS Code\Python\pygame_images'
+imgPath = 'D:\Documents\VS Code\Python\PyGame\PyGame Tutorial\pygame_images'
+# imgPath = 'D:\Documents\VS Code\Python\pygame_images'
 walkRight = [pygame.image.load(imgPath + '\R1.png'), pygame.image.load(imgPath + '\R2.png'),
              pygame.image.load(
                  imgPath + '\R3.png'), pygame.image.load(imgPath + '\R4.png'),
