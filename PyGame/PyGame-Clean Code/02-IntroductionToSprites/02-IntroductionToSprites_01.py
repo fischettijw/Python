@@ -58,7 +58,6 @@ for target in range(40):
     target_group.add(new_target)
 
 while True:
-    clock.tick(60)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
@@ -71,3 +70,4 @@ while True:
     crosshair_group.draw(screen)
     crosshair_group.update()
     pygame.display.flip()
+    clock.tick(60)
