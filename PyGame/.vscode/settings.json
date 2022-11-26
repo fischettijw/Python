@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "C:\\Users\\fisch\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "python.linting.banditEnabled": true,
+    "python.linting.enabled": true
+}
